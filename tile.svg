@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="tile.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#000000"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.62760417"
+     inkscape:cx="725.77593"
+     inkscape:cy="540.14938"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.2;stroke-miterlimit:4.5;paint-order:fill markers stroke;fill-opacity:1"
+       id="rect18818"
+       width="143.33609"
+       height="140.80663"
+       x="-4.2157674"
+       y="-2.9510374" />
+    <path
+       style="fill:#578db0;fill-rule:evenodd;stroke-width:0.2;stroke-miterlimit:4.5;paint-order:fill markers stroke"
+       id="path18872"
+       sodipodi:type="arc"
+       sodipodi:cx="248.30872"
+       sodipodi:cy="70.403313"
+       sodipodi:rx="66.145836"
+       sodipodi:ry="66.145836"
+       sodipodi:start="0"
+       sodipodi:end="6.2607322"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 314.45455,70.403313 A 66.145836,66.145836 0 0 1 248.68001,136.54811 66.145836,66.145836 0 0 1 182.16705,71.145887 66.145836,66.145836 0 0 1 247.19488,4.2668554 66.145836,66.145836 0 0 1 314.43788,68.918258" />
+  </g>
+</svg>

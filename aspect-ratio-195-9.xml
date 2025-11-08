@@ -1,0 +1,15 @@
+<theme>
+    <fontSize name="medium">
+        <variables>
+            <helpsystemFontSize>0.034</helpsystemFontSize>
+            <helpsystemPanelSize>1 0.058</helpsystemPanelSize>
+        </variables>
+    </fontSize>
+    <fontSize name="large">
+        <variables>
+            <helpsystemFontSize>0.040</helpsystemFontSize>
+            <helpsystemPanelSize>1 0.063</helpsystemPanelSize>
+        </variables>
+    </fontSize>
+    
+</theme>

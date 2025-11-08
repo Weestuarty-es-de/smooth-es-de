@@ -1,0 +1,75 @@
+<theme>
+
+<aspectRatio name="4:3">
+<fontSize name="medium">
+<variables>
+<gridItemSize>0.188 0.188</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="large">
+<variables>
+<gridItemSize>0.235 0.235</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="x-large">
+<variables>
+<gridItemSize>0.3133333 0.3133333</gridItemSize>
+</variables>
+</fontSize>
+</aspectRatio>
+
+<aspectRatio name="16:9">
+<fontSize name="medium">
+<variables>
+<gridItemSize>0.188 0.2506666</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="large">
+<variables>
+<gridItemSize>0.235 0.3133333</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="x-large">
+<variables>
+<gridItemSize>0.3133333 0.4177777</gridItemSize>
+</variables>
+</fontSize>
+</aspectRatio>
+
+<aspectRatio name="16:10">
+<fontSize name="medium">
+<variables>
+<gridItemSize>0.188 0.2256</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="large">
+<variables>
+<gridItemSize>0.235 0.282</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="x-large">
+<variables>
+<gridItemSize>0.3133333 0.376</gridItemSize>
+</variables>
+</fontSize>
+</aspectRatio>
+
+<aspectRatio name="19.5:9">
+<fontSize name="medium">
+<variables>
+<gridItemSize>0.188 0.3055</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="large">
+<variables>
+<gridItemSize>0.235 0.381875</gridItemSize>
+</variables>
+</fontSize>
+<fontSize name="x-large">
+<variables>
+<gridItemSize>0.3133333 0.5091666</gridItemSize>
+</variables>
+</fontSize>
+</aspectRatio>
+
+</theme>

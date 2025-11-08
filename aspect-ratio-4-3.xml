@@ -1,0 +1,32 @@
+<theme>
+    <variant name="carousel">
+        <view name="gamelist">
+             
+            <text name="systemdesclabel">
+                <pos>0.035 0.3125</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>Info</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${tertiaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+        </view>
+    </variant>
+<variant name="grid">
+        <view name="gamelist">
+             
+        </view>
+    </variant>
+    <variant name="text">
+        <view name="gamelist">
+            
+            
+        </view>
+    </variant>
+    
+</theme>

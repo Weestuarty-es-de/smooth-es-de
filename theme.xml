@@ -1,0 +1,844 @@
+<theme>
+    <include>./languages.xml</include>
+    <include>./system/metadata/_default.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./colors.xml</include>
+
+    <variables>
+        <primaryFont>./rug.ttf</primaryFont>
+        <secondaryFont>./gen.otf</secondaryFont>
+        <pixelImage>./tile.svg</pixelImage>
+    </variables>
+
+    <fontSize name="medium">
+        <variables>
+            <gameCounterFontSize>0.0275</gameCounterFontSize>
+            <systemLabelFontSize>0.035</systemLabelFontSize>
+            <textlistFontSize>0.035</textlistFontSize>
+            <textlistSelector>0.05</textlistSelector>
+            <metadataFontSize>0.035</metadataFontSize>
+            <gridScale>1.2</gridScale>
+        </variables>
+    </fontSize>
+    <fontSize name="large">
+        <variables>
+            <gameCounterFontSize>0.0275</gameCounterFontSize>
+            <systemLabelFontSize>0.038</systemLabelFontSize>
+            <textlistFontSize>0.042</textlistFontSize>
+            <textlistSelector>0.06</textlistSelector>
+            <metadataFontSize>0.042</metadataFontSize>
+            <gridScale>1.15</gridScale>
+        </variables>
+    </fontSize>
+    <fontSize name="x-large">
+        <variables>
+            <gameCounterFontSize>0.0275</gameCounterFontSize>
+            <systemLabelFontSize>0.038</systemLabelFontSize>
+            <textlistFontSize>0.048</textlistFontSize>
+            <textlistSelector>0.07</textlistSelector>
+            <metadataFontSize>0.048</metadataFontSize>
+            <gridScale>1.05</gridScale>
+        </variables>
+    </fontSize>
+
+    <aspectRatio name="16:9">
+        <include>./aspect-ratio-16-9.xml</include>
+    </aspectRatio>
+    <aspectRatio name="16:10">
+        <include>./aspect-ratio-16-10.xml</include>
+    </aspectRatio>
+    <aspectRatio name="4:3">
+        <include>./aspect-ratio-4-3.xml</include>
+    </aspectRatio>
+    <aspectRatio name="19.5:9">
+        <include>./aspect-ratio-195-9.xml</include>
+    </aspectRatio>
+
+    <variant name="all">
+        <view name="system, gamelist">
+            <gameselector name="last">
+                <gameCount>1</gameCount>
+                <selection>lastplayed</selection>
+            </gameselector>
+            <image name="background">
+                <pos>0 0</pos>
+                <size>1 .2</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor}</color>
+                <zIndex>0</zIndex>
+            </image>
+            <image name="background2">
+                <pos>0 0.2</pos>
+                <size>1 1</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor2}</color>
+                <zIndex>1</zIndex>
+            </image>
+            <image name="helpsystemPanel">
+                <pos>0 1</pos>
+                <origin>0 1</origin>
+                <size>1 0.05</size>
+                <stationary>always</stationary>
+                <path>${pixelImage}</path>
+                <color>${helpsystemPanelColor}</color>
+                <zIndex>160</zIndex>
+            </image>
+            <helpsystem name="help">
+                <pos>0.5 0.99</pos>
+                <origin>0.5 1</origin>
+                <textColor>${statusColor}</textColor>
+                <iconColor>${primaryColor}</iconColor>
+                <fontPath>${secondaryFont}</fontPath>
+                <entryRelativeScale>0.7</entryRelativeScale>
+                <letterCase>capitalize</letterCase>
+            </helpsystem>
+            <systemstatus name="systemStatus">
+                <pos>0.985 0.014</pos>
+                <height>0.035</height>
+                <fontPath>${primaryFont}</fontPath>
+                <textRelativeScale>0.8</textRelativeScale>
+                <color>${statusColor}</color>
+                <entrySpacing>0.005</entrySpacing>
+            </systemstatus>
+            <clock name="clock">
+                <pos>0.982 0.05</pos>
+                <origin>1 0</origin>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>0.029</fontSize>
+                <color>${statusColor}</color>
+                <format>%H:%M</format>
+            </clock>
+            <image name="carbackground">
+                <pos>0.5 0.25</pos>
+                <size>1 0.1</size>
+                <origin>0.5 0.5</origin>
+                <path>${pixelImage}</path>
+                <color>${carback}</color>
+                <colorEnd>${carbackend}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>10</zIndex>
+            </image>
+        </view>
+
+        <view name="system">
+            <carousel name="carousel">
+                <pos>0.5 0.25</pos>
+                <size>1 0.1</size>
+                <origin>0.5 0.5</origin>
+                <maxItemCount>6.25</maxItemCount>
+                <itemSize>0.125 0.06</itemSize>
+                <itemScale>1</itemScale>
+                <defaultImage>./system/custom/logocolor/${system.theme}.svg</defaultImage>
+                <staticImage>./system/logos/system-logo-color/${system.theme}.svg</staticImage>
+                <itemVerticalAlignment>center</itemVerticalAlignment>
+                <unfocusedItemOpacity>.7</unfocusedItemOpacity>
+                <unfocusedItemSaturation>0.8</unfocusedItemSaturation>
+                <selectedItemMargins>0.015 0.015</selectedItemMargins>
+                <horizontalOffset>-0.4</horizontalOffset>
+                <fastScrolling>true</fastScrolling>
+                <lineSpacing>0.9</lineSpacing>
+                <color>00000000</color>
+                <text>${systemName}</text>
+                <textRelativeScale>1</textRelativeScale>
+                <textColor>${primaryColor}</textColor>
+                <textSelectedColor>${primaryColor}</textSelectedColor>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>0.035</fontSize>
+                <letterCase>none</letterCase>
+                <zIndex>13</zIndex>
+            </carousel>
+            <image name="es">
+                <pos>0.3 0.125</pos>
+                <cropSize>0.2 0.2</cropSize>
+                <cropPos>0.5 0.0</cropPos>
+                <origin>1 0.5</origin>
+                <path>./es.svg</path>
+                <color>${backgroundColor6}</color>
+                <zIndex>9</zIndex>
+            </image>
+            <image name="logo">
+                <pos>0.25 0.1</pos>
+                <maxSize>0.5 0.15</maxSize>
+                <origin>0 0.5</origin>
+                <path>./eslogo.svg</path>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="logo2">
+                <pos>0.325 0.6</pos>
+                <maxSize>0.675 0.4</maxSize>
+                <origin>0.5 0.5</origin>
+                <rotation>-25</rotation>
+                <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor2}</color>
+                <opacity>0.5</opacity>
+                <zIndex>9</zIndex>
+            </image>
+            <text name="systemdesclabel">
+                <pos>0.02 0.31</pos>
+                <size>0.61 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>System Information</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="systemgamelabel">
+                <pos>0.665 0.31</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>Last Played</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="systemdescription">
+                <pos>0.02 0.4575</pos>
+                <size>0.61 0.47</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>${systemDescription}</text>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>none</letterCase>
+                <lineSpacing>1.05</lineSpacing>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="systemmanufacturer">
+                <pos>0.02 0.3725</pos>
+                <size>0.61 0.08</size>
+                <origin>0 0</origin>
+                <text>${systemManufacturer} (${systemReleaseYear})</text>
+                <defaultValue>:space:</defaultValue>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <image name="backgroundsysmetlabel">
+                <pos>0.01 0.31</pos>
+                <size>0.63 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor5}</color>
+                <colorEnd>${backgroundColor4}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>11</zIndex>
+            </image>
+            <image name="backgroundsysmet">
+                <pos>0.01 0.36</pos>
+                <size>0.63 0.56</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="backgroundsysgamelabel">
+                <pos>0.65 0.31</pos>
+                <size>0.34 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor5}</color>
+                <colorEnd>${backgroundColor4}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>3</zIndex>
+            </image>
+            <image name="backgroundgame1">
+                <pos>0.65 0.36</pos>
+                <size>0.34 0.41</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>10</zIndex>
+            </image>
+            <video name="backgroundgame1art">
+                <pos>0.82 0.565</pos>
+                <maxSize>0.33 0.39</maxSize>
+                <origin>0.5 0.5</origin>
+                <gameselector>last</gameselector>
+                <imageType>titlescreen, screenshot, cover</imageType>
+                <zIndex>11</zIndex>
+            </video>
+            <image name="backgroundgame4">
+                <pos>0.65 0.7875</pos>
+                <size>0.34 0.1325</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+
+                <color>${backgroundColor3}</color>
+                <zIndex>1</zIndex>
+            </image>
+            <text name="game4name">
+                <pos>0.655 0.7925</pos>
+                <size>0.33 0.12</size>
+                <gameselector>last</gameselector>
+                <origin>0 0</origin>
+                <metadata>name</metadata>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <lineSpacing>1</lineSpacing>
+                <fontPath>${primaryFont}</fontPath>
+                <systemNameSuffix>false</systemNameSuffix>
+                <zIndex>12</zIndex>
+            </text>
+            <image name="car highlight">
+                <pos>0.03 0.2</pos>
+                <size>0.14 0.1</size>
+                <origin>0 0</origin>
+                <path>./selector.svg</path>
+                <color>${primaryColor}</color>
+                <colorEnd>${backgroundColor2}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="car highlight2">
+                <pos>0.03 0.2</pos>
+                <size>0.14 0.1</size>
+                <origin>0 0</origin>
+                <path>./selector2.svg</path>
+                <color>${carbackend}</color>
+                <colorEnd>${carback}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>10</zIndex>
+            </image>
+        </view>
+    </variant>
+
+    <variant name="carousel">
+        <view name="gamelist">
+            <carousel name="carousel">
+                <pos>0.0 0.25</pos>
+                <size>1 0.1</size>
+                <origin>0 0.5</origin>
+                <type>horizontal</type>
+                <imageType>marquee</imageType>
+                <maxItemCount>6.1</maxItemCount>
+                <itemSize>0.12 0.08</itemSize>
+                <itemScale>1</itemScale>
+                <horizontalOffset>-0.4</horizontalOffset>
+                <selectedItemMargins>0.10 0.0</selectedItemMargins>
+                <selectedItemOffset>-0. 0</selectedItemOffset>
+                <itemHorizontalAlignment>left</itemHorizontalAlignment>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <unfocusedItemSaturation>1</unfocusedItemSaturation>
+                <unfocusedItemDimming>1</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textRelativeScale>0.9</textRelativeScale>
+                <textColor>${primaryColor}</textColor>
+                <textSelectedColor>${primaryColor}</textSelectedColor>
+                <textBackgroundColor>${backgroundColor3}00</textBackgroundColor>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>0.025</fontSize>
+                <letterCase>none</letterCase>
+                <lineSpacing>1</lineSpacing>
+                <systemNameSuffix>false</systemNameSuffix>
+                <zIndex>13</zIndex>
+            </carousel>
+            <image name="car highlight">
+                <pos>0.03 0.2</pos>
+                <size>0.14 0.1</size>
+                <origin>0 0</origin>
+                <path>./selector.svg</path>
+                <color>${primaryColor}</color>
+                <colorEnd>${backgroundColor2}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="car highlight2">
+                <pos>0.03 0.2</pos>
+                <size>0.14 0.1</size>
+                <origin>0 0</origin>
+                <path>./selector2.svg</path>
+                <color>${carbackend}</color>
+                <colorEnd>${carback}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>10</zIndex>
+            </image>
+            <image name="backgroundsysmetlabel">
+                <pos>0.03 0.31</pos>
+                <size>0.14 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor5}</color>
+                <colorEnd>${backgroundColor4}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>3</zIndex>
+            </image>
+            <image name="backgroundsysmet">
+                <pos>0.03 0.36</pos>
+                <size>0.14 0.56</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="backgroundsysimage">
+                <pos>0.175 0.36</pos>
+                <size>0.33 0.56</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>1</zIndex>
+            </image>
+            <image name="backgroundsysimagelabel">
+                <pos>0.175 0.31</pos>
+                <size>0.795 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <colorEnd>${backgroundColor3}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>3</zIndex>
+            </image>
+            <video name="sys art">
+                <pos>0.74 0.64</pos>
+                <maxSize>0.45 0.55</maxSize>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot,marquee</imageType>
+                <pillarboxes>false</pillarboxes>
+                <fadeInTime>0</fadeInTime>
+                <fadeInType>transparent</fadeInType>
+                <zIndex>11</zIndex>
+                <iterationCount>1</iterationCount>
+                <onIterationsDone>image</onIterationsDone>
+            </video>
+            <text name="systemdesclabel">
+                <pos>0.035 0.3125</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>Info</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="systemimagelabel">
+                <pos>0.185 0.3125</pos>
+                <size>0.78 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <metadata>name</metadata>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="gamedescription">
+                <pos>0.185 0.365</pos>
+                <size>0.31 0.55</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <metadata>description</metadata>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>none</letterCase>
+                <lineSpacing>1.05</lineSpacing>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="gamemanufacturer">
+                <pos>0.0325 0.365</pos>
+                <size>0.13 0.101</size>
+                <origin>0 0</origin>
+                <metadata>publisher</metadata>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <defaultValue>:space:</defaultValue>
+                <letterCase>none</letterCase>
+                <lineSpacing>0.8</lineSpacing>
+                <zIndex>12</zIndex>
+            </text>
+            <datetime name="gamerelease">
+                <pos>0.0325 0.45</pos>
+                <size>0.13 0.08</size>
+                <origin>0 0</origin>
+                <format>%Y</format>
+                <metadata>releasedate</metadata>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <defaultValue>:space:</defaultValue>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </datetime>
+            <image name="backgroundgameimage">
+                <pos>0.51 0.36</pos>
+                <size>0.46 0.56</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>1</zIndex>
+            </image>
+            <badges name="badges">
+                <pos>0.035 0.53</pos>
+                <size>0.13 0.38</size>
+                <origin>0 0</origin>
+                <direction>row</direction>
+                <lines>3</lines>
+                <itemsPerLine>2</itemsPerLine>
+                <horizontalAlignment>center</horizontalAlignment>
+                <slots>favorite, completed, kidgame, controller, altemulator, manual</slots>
+                <controllerPos>0.5 0.575</controllerPos>
+                <controllerSize>0.85</controllerSize>
+                <controllerIconColor>${primaryColor}</controllerIconColor>
+                <badgeIconColor>${primaryColor}</badgeIconColor>
+                <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+                <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+                <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+                <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+                <customBadgeIcon badge="broken">./assets/badges/broken.svg</customBadgeIcon>
+                <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+                <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+                <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
+            </badges>
+            <image name="logo">
+                <pos>0.25 0.1</pos>
+                <maxSize>0.5 0.15</maxSize>
+                <origin>0 0.5</origin>
+                <path>./system/logos/system-logo-color/${system.theme}.svg</path>
+                <default>./system/custom/logocolor/${system.theme}.svg</default>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="cont">
+                <pos>0.3 0.1</pos>
+                <cropSize>0.3 0.2</cropSize>
+                <cropPos>1 0</cropPos>
+                <origin>1 0.5</origin>
+                <path>./system/controller-outline/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor6}</color>
+                <zIndex>9</zIndex>
+            </image>
+            <image name="logo2">
+                <pos>0.425 0.635</pos>
+                <maxSize>0.8 0.5</maxSize>
+                <origin>0.5 0.5</origin>
+                <rotation>-17.5</rotation>
+                <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor2}</color>
+                <opacity>0.5</opacity>
+                <zIndex>9</zIndex>
+            </image>
+        </view>
+    </variant>
+
+    <variant name="grid">
+        <include>./system/coversize/${systemCoverSize}.xml</include>
+        <view name="gamelist">
+            <grid name="system_grid">
+                <itemSize>${gridItemSize}</itemSize>
+                <origin>0 0</origin>
+                <pos>0.01 0.3</pos>
+                <size>1 0.65</size>
+                <itemSpacing>0.01 0.01</itemSpacing>
+                <imageType>cover</imageType>
+                <imageRelativeScale>0.9</imageRelativeScale>
+                <itemScale>${gridScale}</itemScale>
+                <systemNameSuffix>false</systemNameSuffix>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <selectorLayer>bottom</selectorLayer>
+                <selectorColor>${systemColorPalette1}</selectorColor>
+                <selectorColorEnd>${systemColorPalette2}</selectorColorEnd>
+                <selectorGradientType>vertical</selectorGradientType>
+                <selectorRelativeScale>0.935</selectorRelativeScale>
+                <selectorCornerRadius>0.015</selectorCornerRadius>
+                <imageCornerRadius>0.01</imageCornerRadius>
+                <text>${systemName}</text>
+                <textColor>${primaryColor}</textColor>
+                <scaleInwards>true</scaleInwards>
+                <imageFit>fill</imageFit>
+                <fractionalRows>true</fractionalRows>
+                <textSelectedColor>${highlight}</textSelectedColor>
+                <textRelativeScale>0.925</textRelativeScale>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>0.04</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>0.8</lineSpacing>
+                <zIndex>29</zIndex>
+            </grid>
+            <image name="logo">
+                <pos>0.25 0.1</pos>
+                <maxSize>0.5 0.15</maxSize>
+                <origin>0 0.5</origin>
+                <path>./system/logos/system-logo-color/${system.theme}.svg</path>
+                <default>./system/custom/logocolor/${system.theme}.svg</default>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="cont">
+                <pos>0.3 0.1</pos>
+                <cropSize>0.3 0.2</cropSize>
+                <cropPos>1 0</cropPos>
+                <origin>1 0.5</origin>
+                <path>./system/controller-outline/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor6}</color>
+                <zIndex>9</zIndex>
+            </image>
+            <text name="gamename">
+                <pos>0.5 0.25</pos>
+                <size>0.75 0.09</size>
+                <origin>0.5 0.5</origin>
+                <metadata>name</metadata>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${systemLabelFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>none</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>22</zIndex>
+            </text>
+            <image name="logo2">
+                <pos>0.5 0.65</pos>
+                <maxSize>1 0.7</maxSize>
+                <origin>0.5 0.5</origin>
+                <rotation>-17.5</rotation>
+                <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor}</color>
+                <opacity>0.5</opacity>
+                <zIndex>9</zIndex>
+            </image>
+            <video name="logoimage">
+                <origin>0 0</origin>
+                <pos>0.0 0.3</pos>
+                <maxSize>1 0.65</maxSize>
+                <imageCropSize>0.55 0.57</imageCropSize>
+                <imageType>none</imageType>
+                <delay>5</delay>
+                <pillarboxes>true</pillarboxes>
+                <pillarboxThreshold>1 1</pillarboxThreshold>
+                <iterationCount>1</iterationCount>
+                <onIterationsDone>nothing</onIterationsDone>
+                <zIndex>30</zIndex>
+            </video>
+        </view>
+    </variant>
+
+    <variant name="text">
+        <view name="gamelist">
+            <textlist name="system_text">
+                <origin>0 0</origin>
+                <pos>0.0185 0.365</pos>
+                <size>0.4 0.57</size>
+                <systemNameSuffix>false</systemNameSuffix>
+                <selectorColor>${primaryColor}</selectorColor>
+                <selectedColor>${backgroundColor}</selectedColor>
+                <selectorHeight>${textlistSelector}</selectorHeight>
+                <selectorWidth>0.4095</selectorWidth>
+                <selectorVerticalOffset>0.005</selectorVerticalOffset>
+                <selectorHorizontalOffset>-0.004</selectorHorizontalOffset>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${textlistFontSize}</fontSize>
+                <primaryColor>${primaryColor}</primaryColor>
+                <secondaryColor>${primaryColor}</secondaryColor>
+                <horizontalMargin>0.0075</horizontalMargin>
+                <letterCase>none</letterCase>
+                <lineSpacing>1.5</lineSpacing>
+                <zIndex>29</zIndex>
+            </textlist>
+            <image name="logo">
+                <pos>0.25 0.1</pos>
+                <maxSize>0.5 0.15</maxSize>
+                <origin>0 0.5</origin>
+                <path>./system/logos/system-logo-color/${system.theme}.svg</path>
+                <default>./system/custom/logocolor/${system.theme}.svg</default>
+                <zIndex>12</zIndex>
+            </image>
+            <image name="cont">
+                <pos>0.3 0.1</pos>
+                <cropSize>0.3 0.2</cropSize>
+                <cropPos>1 0</cropPos>
+                <origin>1 0.5</origin>
+                <path>./system/controller-outline/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor6}</color>
+                <zIndex>9</zIndex>
+            </image>
+            <image name="backgroundsysmetlabel">
+                <pos>0.015 0.31</pos>
+                <size>0.409 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor5}</color>
+                <colorEnd>${backgroundColor4}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>3</zIndex>
+            </image>
+            <image name="backgroundsysmet">
+                <pos>0.015 0.36</pos>
+                <size>0.409 0.58</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="backgroundsysmetgrad">
+                <pos>0.015 0.36</pos>
+                <size>0.409 0.56</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <path>./gradient2.svg</path>
+                <color>${backgroundColor4}</color>
+                <zIndex>3</zIndex>
+            </image>
+            <image name="backgroundsysgamelabel">
+                <pos>0.43 0.31</pos>
+                <size>0.56 0.045</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor5}</color>
+                <colorEnd>${backgroundColor4}</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>3</zIndex>
+            </image>
+            <image name="backgroundgameimage">
+                <pos>0.43 0.36</pos>
+                <size>0.56 0.58</size>
+                <origin>0 0</origin>
+                <path>${pixelImage}</path>
+                <color>${backgroundColor3}</color>
+                <zIndex>1</zIndex>
+            </image>
+            <image name="backgroundgameimagegrad">
+                <pos>0.43 0.36</pos>
+                <size>0.56 0.58</size>
+                <origin>0 0</origin>
+                <path>./gradient2.svg</path>
+                <color>${backgroundColor4}</color>
+                <zIndex>2</zIndex>
+            </image>
+            <text name="gamedescription">
+                <pos>0.435 0.365</pos>
+                <size>0.55 0.57</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <metadata>description</metadata>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${metadataFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>none</letterCase>
+                <lineSpacing>1.05</lineSpacing>
+                <zIndex>10</zIndex>
+            </text>
+            <video name="logoimage">
+                <pos>0.71 0.65</pos>
+                <maxSize>0.555 0.57</maxSize>
+                <imageCropSize>0.55 0.57</imageCropSize>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot</imageType>
+                <pillarboxes>true</pillarboxes>
+                <pillarboxThreshold>1 1</pillarboxThreshold>
+                <iterationCount>1</iterationCount>
+                <onIterationsDone>nothing</onIterationsDone>
+                <zIndex>12</zIndex>
+            </video>
+            <image name="car highlight">
+                <pos>0.1 0.25</pos>
+                <maxSize>0.16 0.09</maxSize>
+                <origin>0.5 0.5</origin>
+                <imageType>marquee</imageType>
+                <zIndex>12</zIndex>
+            </image>
+            <badges name="badges">
+                <pos>0.985 0.25</pos>
+                <size>0.45 0.08</size>
+                <origin>1 0.5</origin>
+                <direction>row</direction>
+                <itemMargin>0.005 0.005</itemMargin>
+                <horizontalAlignment>right</horizontalAlignment>
+                <lines>1</lines>
+                <itemsPerLine>7</itemsPerLine>
+                <slots>favorite, completed, controller, manual, kidgame, broken, altemulator</slots>
+                <controllerPos>0.5 0.575</controllerPos>
+                <controllerSize>0.85</controllerSize>
+                <badgeIconColor>${primaryColor}</badgeIconColor>
+                <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+                <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+                <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+                <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+                <customBadgeIcon badge="broken">./assets/badges/broken.svg</customBadgeIcon>
+                <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+                <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+                <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
+            </badges>
+            <text name="systemdesclabel">
+                <pos>0.025 0.3125</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text>Gamelist</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="systemgamelabel">
+                <pos>0.44 0.3125</pos>
+                <size>0.54 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <metadata>name</metadata>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <image name="logo2">
+                <pos>0.22125 0.65</pos>
+                <maxSize>0.5 0.7</maxSize>
+                <origin>0.5 0.5</origin>
+                <rotation>-25</rotation>
+                <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor2}</color>
+                <opacity>0.5</opacity>
+                <zIndex>9</zIndex>
+            </image>
+             <image name="logo3">
+                <pos>0.75 0.65</pos>
+                <maxSize>0.6 0.7</maxSize>
+                <origin>0.5 0.5</origin>
+                <rotation>-25</rotation>
+                <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+                <default>./system/custom/logo/${system.theme}.svg</default>
+                <color>${backgroundColor2}</color>
+                <opacity>0.5</opacity>
+                <zIndex>9</zIndex>
+            </image>
+        </view>
+    </variant>
+
+</theme>

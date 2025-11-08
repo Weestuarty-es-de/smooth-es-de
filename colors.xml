@@ -1,0 +1,96 @@
+<theme>
+    <colorScheme name="oled">
+        <variables>
+            <!-- Both system and gamelist views -->
+            <helpsystemPanelColor>000000</helpsystemPanelColor>        
+            <backgroundColor>000000</backgroundColor>
+            <backgroundColor2>232323</backgroundColor2>
+            <backgroundColor3>000000</backgroundColor3>
+            <backgroundColor4>000000</backgroundColor4>
+            <backgroundColor5>464646</backgroundColor5>
+            <backgroundColor6>545454</backgroundColor6>
+            <carback>464646</carback>
+            <carbackend>000000</carbackend>
+            <primaryColor>FAFAFA</primaryColor>
+            <statusColor>FAFAFABB</statusColor>
+            <highlight>232323</highlight>
+        </variables>
+       
+    </colorScheme>
+
+    <colorScheme name="grey">
+    <variables>
+            <!-- Both system and gamelist views -->
+            <helpsystemPanelColor>989898</helpsystemPanelColor>
+            <backgroundColor>ababab</backgroundColor>
+            <backgroundColor2>cacaca</backgroundColor2>
+            <backgroundColor3>989898</backgroundColor3>
+            <backgroundColor4>787878</backgroundColor4>
+            <backgroundColor5>989898</backgroundColor5>
+            <backgroundColor6>545454</backgroundColor6>
+            <carback>cacaca</carback>
+            <carbackend>ababab</carbackend>
+            <primaryColor>121212</primaryColor>
+            <statusColor>121212BB</statusColor>
+            <highlight>232323</highlight>
+        </variables>
+    </colorScheme>
+     <colorScheme name="classy">
+    <variables>
+            <!-- Both system and gamelist views -->
+            <helpsystemPanelColor>561420BB</helpsystemPanelColor>
+            <backgroundColor>561420</backgroundColor>
+            <backgroundColor2>821122</backgroundColor2>
+            <backgroundColor3>561420</backgroundColor3>
+            <backgroundColor4>56142055</backgroundColor4>
+            <backgroundColor5>561420</backgroundColor5>
+            <backgroundColor6>c59a6f55</backgroundColor6>
+            <carback>821122</carback>
+            <carbackend>561420</carbackend>
+            <primaryColor>c59a6f</primaryColor>
+            <statusColor>c59a6fBB</statusColor>
+            <highlight>c59a6f</highlight>
+            <systemColorPalette1>C59a6f</systemColorPalette1>
+            <systemColorPalette2>C59a6f</systemColorPalette2>
+        </variables>
+    </colorScheme>
+    <colorScheme name="hyst">
+    <variables>
+            <!-- Both system and gamelist views -->
+            <helpsystemPanelColor>1c4a26BB</helpsystemPanelColor>
+            <backgroundColor>1c4a26</backgroundColor>
+            <backgroundColor2>536f50</backgroundColor2>
+            <backgroundColor3>1c4a26</backgroundColor3>
+            <backgroundColor4>1c4a2655</backgroundColor4>
+            <backgroundColor5>1c4a26</backgroundColor5>
+            <backgroundColor6>ce9b5855</backgroundColor6>
+            <carback>536f50</carback>
+            <carbackend>1c4a26</carbackend>
+            <primaryColor>ce9b58</primaryColor>
+            <statusColor>ce9b58BB</statusColor>
+            <highlight>ce9b58</highlight>
+            <systemColorPalette1>Ce9b58</systemColorPalette1>
+            <systemColorPalette2>Ce9b58</systemColorPalette2>
+        </variables>
+    </colorScheme>
+     <colorScheme name="gold">
+        <variables>
+            <!-- Both system and gamelist views -->
+            <helpsystemPanelColor>000000</helpsystemPanelColor>        
+            <backgroundColor>000000</backgroundColor>
+            <backgroundColor2>272722</backgroundColor2>
+            <backgroundColor3>000000</backgroundColor3>
+            <backgroundColor4>000000</backgroundColor4>
+            <backgroundColor5>272722</backgroundColor5>
+            <backgroundColor6>ce9b5888</backgroundColor6>
+            <carback>272722</carback>
+            <carbackend>000000</carbackend>
+            <primaryColor>ce9b58BB</primaryColor>
+            <statusColor>ce9b58BB</statusColor>
+            <highlight>252522</highlight>
+            <systemColorPalette1>fbc403</systemColorPalette1>
+            <systemColorPalette2>7f680b</systemColorPalette2>
+        </variables>
+       
+    </colorScheme>
+</theme>

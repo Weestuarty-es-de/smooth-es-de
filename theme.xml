@@ -447,7 +447,7 @@
             </text>
             <text name="gamedescription">
                 <pos>0.185 0.365</pos>
-                <size>0.31 0.55</size>
+                <size>0.31 0.5</size>
                 <container>true</container>
                 <origin>0 0</origin>
                 <metadata>description</metadata>
@@ -546,6 +546,35 @@
                 <opacity>0.5</opacity>
                 <zIndex>9</zIndex>
             </image>
+            <text name="playtime">
+                <pos>0.29 0.875</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <metadata>playtime</metadata>
+                <defaultValue>${langLabelNever}</defaultValue>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>let</horizontalAlignment>
+				<verticalAlignment>center</verticalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>20</zIndex>
+            </text>
+            <text name="playtimetext">
+                <pos>0.16 0.875</pos>
+                <size>0.125 0.08</size>
+                <container>true</container>
+                <origin>0 0</origin>
+                <text> ${langLabelPlayed}:</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>right</horizontalAlignment>
+				<verticalAlignment>center</verticalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>20</zIndex>
+            </text>
         </view>
     </variant>
 
@@ -639,6 +668,7 @@
                 <onIterationsDone>nothing</onIterationsDone>
                 <zIndex>30</zIndex>
             </video>
+             
         </view>
     </variant>
 
@@ -761,6 +791,35 @@
                 <onIterationsDone>nothing</onIterationsDone>
                 <zIndex>12</zIndex>
             </video>
+            <text name="playtime">
+                <pos>0.5 0.215</pos>
+                <size>0.25 0.08</size>
+                <container>true</container>
+                <origin>0.5 0</origin>
+                <metadata>playtime</metadata>
+                <defaultValue>${langLabelNever}</defaultValue>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+				<verticalAlignment>center</verticalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
+            <text name="playtimetext">
+                <pos>0.5 0.24</pos>
+                <size>0.125 0.08</size>
+                <container>true</container>
+                <origin>0.5 0</origin>
+                <text>${langLabelPlayed}</text>
+                <fontPath>${primaryFont}</fontPath>
+                <fontSize>${gameCounterFontSize}</fontSize>
+                <horizontalAlignment>center</horizontalAlignment>
+				<verticalAlignment>center</verticalAlignment>
+                <color>${primaryColor}</color>
+                <letterCase>capitalize</letterCase>
+                <zIndex>12</zIndex>
+            </text>
             <image name="car highlight">
                 <pos>0.1 0.25</pos>
                 <maxSize>0.16 0.09</maxSize>

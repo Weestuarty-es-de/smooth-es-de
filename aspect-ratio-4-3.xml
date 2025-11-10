@@ -7,13 +7,6 @@
                 <size>0.25 0.08</size>
                 <container>true</container>
                 <origin>0 0</origin>
-                <text>Info</text>
-                <fontPath>${primaryFont}</fontPath>
-                <fontSize>${gameCounterFontSize}</fontSize>
-                <horizontalAlignment>left</horizontalAlignment>
-                <color>${tertiaryColor}</color>
-                <letterCase>capitalize</letterCase>
-                <zIndex>12</zIndex>
             </text>
         </view>
     </variant>

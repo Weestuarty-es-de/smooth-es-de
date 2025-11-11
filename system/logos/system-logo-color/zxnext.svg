@@ -7,10 +7,6 @@
    width="559.55603"
    height="170.66667"
    viewBox="0 0 559.55603 170.66667"
-   sodipodi:docname="zxnext.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -280,36 +276,8 @@
       </g>
     </clipPath>
   </defs>
-  <sodipodi:namedview
-     id="namedview181"
-     pagecolor="#ffffff"
-     bordercolor="#111111"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="1"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="2.4144142"
-     inkscape:cx="273.15115"
-     inkscape:cy="85.320905"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g187">
-    <inkscape:page
-       x="0"
-       y="0"
-       id="page185"
-       width="559.55603"
-       height="170.66667" />
-  </sodipodi:namedview>
   <g
      id="g187"
-     inkscape:groupmode="layer"
-     inkscape:label="Page 1"
      transform="matrix(1.3333333,0,0,-1.3333333,0,170.66667)">
     <g
        id="g197"

@@ -657,7 +657,7 @@
             <langLabelGames>Spel</langLabelGames>
             <langLabelFavorites>Favoriter</langLabelFavorites>
             <langLabelLastPlay>Senast spelat</langLabelLastPlay>
-            <langLabelTimePlay>Spelade gånger</langLabelTimePlay>
+            <langLabelTimePlay>Spelat gånger</langLabelTimePlay>
             <langLabelSysName>Systemnamn</langLabelSysName>
             <langLabelCompleted>Avslutad</langLabelCompleted>
             <langLabelChild>Barnsäkert</langLabelChild>
@@ -674,7 +674,7 @@
             <langLabelPowerby>Drivs av</langLabelPowerby>
             <langLabelInfo>Information</langLabelInfo>
             <langUnknown>Okänd</langUnknown>
-            <langLabelPlayed>Spelade</langLabelPlayed>
+            <langLabelPlayed>Spelat</langLabelPlayed>
             <langLabelVideo>Spelupplägg</langLabelVideo>
             <langLabelCover>Omslag</langLabelCover>
             <langLabelGame>Spel</langLabelGame>

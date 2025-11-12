@@ -155,7 +155,7 @@
                 <cropSize>0.2 0.2</cropSize>
                 <cropPos>0.5 0.0</cropPos>
                 <origin>1 0.5</origin>
-                <path>./es.svg</path>
+                <path>./ES.svg</path>
                 <color>${backgroundColor6}</color>
                 <zIndex>9</zIndex>
             </image>

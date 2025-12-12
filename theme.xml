@@ -555,7 +555,7 @@
                 <defaultValue>${langLabelNever}</defaultValue>
                 <fontPath>${primaryFont}</fontPath>
                 <fontSize>${gameCounterFontSize}</fontSize>
-                <horizontalAlignment>let</horizontalAlignment>
+                <horizontalAlignment>left</horizontalAlignment>
 				<verticalAlignment>center</verticalAlignment>
                 <color>${primaryColor}</color>
                 <letterCase>capitalize</letterCase>
